@@ -16,7 +16,6 @@ let currentHint = "";
 const HangmentFunc = () => {
   let random = Math.floor(Math.random() * 30);
   const { hint, word } = wordsArray[random];
-  console.log(word);
   currentWord = word;
   currentHint = hint;
   guessedWord(word);

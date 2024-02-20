@@ -76,7 +76,6 @@ const wordsArray = [
     hint: "Tall African mammal with a long neck and spotted coat",
   },
 ];
-console.log(wordsArray);
 
 const hangmanBody = [
   {
@@ -98,6 +97,5 @@ const hangmanBody = [
     img: "Hangmen/hangman-6.svg",
   },
 ];
-console.log(hangmanBody);
 
 export { wordsArray, hangmanBody };
