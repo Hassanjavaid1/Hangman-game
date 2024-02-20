@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hangmen Game | Hassan javaid</title>
+  </head>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="MediaQuries/mediaStyle.css">
+  <link rel="shortcut icon" href="Favicon.webp" type="image/x-icon" />
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="hangmen_img_content">
+          <img src="Hangmen/hangman-0.svg" id="hangmen_img" />
+
+          <h1>Hangman Game!</h1>
+        </div>
+        <article>
+          <div class="word_display">
+            <ul id="guessed_word">
+              <li id="word_li"></li>
+             
+            </ul>
+          </div>
+          <div class="word_hint">
+            <p id="hint">
+             
+            </p>
+          </div>
+          <div class="chance">
+            <h2 id="Incorrect_guess">Incorrect guess: <span>0/6</span></h2>
+          </div>
+          <div class="keyboard">
+            <button class="keyboard_btn" >a</button>
+            <button class="keyboard_btn" >b</button>
+            <button class="keyboard_btn" >c</button>
+            <button class="keyboard_btn" >d</button>
+            <button class="keyboard_btn" >e</button>
+            <button class="keyboard_btn" >f</button>
+            <button class="keyboard_btn" >g</button>
+            <button class="keyboard_btn" >h</button>
+            <button class="keyboard_btn" >i</button>
+            <button class="keyboard_btn" >j</button>
+            <button class="keyboard_btn" >k</button>
+            <button class="keyboard_btn" >l</button>
+            <button class="keyboard_btn" >m</button>
+            <button class="keyboard_btn" >n</button>
+            <button class="keyboard_btn" >o</button>
+            <button class="keyboard_btn" >p</button>
+            <button class="keyboard_btn" >q</button>
+            <button class="keyboard_btn" >r</button>
+            <button class="keyboard_btn" >s</button>
+            <button class="keyboard_btn" >t</button>
+            <button class="keyboard_btn" >u</button>
+            <button class="keyboard_btn" >v</button>
+            <button class="keyboard_btn" >w</button>
+            <button class="keyboard_btn" >x</button>
+            <button class="keyboard_btn" >y</button>
+            <button class="keyboard_btn" >z</button>
+          </div>
+        </article>
+      </div>
+    </div><div id="myModal" class="modal">
+      <div class="modal-content">
+        <img src="./Hangmen/loser img.gif" id="result_img" alt="">
+        <div class="game_over">Game Over!</div>
+        <p id="correct_answer">Loading...</p>
+        <button id="play_again">Play Again</button>
+      </div>
+    
+    </div>
+    
+
+  </body>
+  <script src="index.js" type="module" ></script>
+  <script type="module" src="HangmenApi.js"></script>
+  </script>
+</html>
